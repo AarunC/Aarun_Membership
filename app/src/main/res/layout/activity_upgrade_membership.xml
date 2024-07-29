@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpgradeMembership">
+
+    <TextView
+        android:id="@+id/tvUpgradeTo"
+        android:layout_width="343dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="41dp"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtCreditNum"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="33dp"
+        android:ems="10"
+        android:hint="@string/edtCreditNum"
+        android:inputType="number"
+        android:maxLength="16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNumOnTheBack"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:hint="@string/edtCVVCode"
+        android:inputType="number"
+        android:maxLength="3"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtExpireDate" />
+
+    <TextView
+        android:id="@+id/tvUpgradePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:text="@string/tvPrice"
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvDisplayPrice"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtExpireDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/edtExpireDate"
+        android:inputType="text"
+        android:maxLength="5"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCreditNum" />
+
+    <TextView
+        android:id="@+id/tvDisplayPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="73dp"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/tvUpgradePrice"
+        app:layout_constraintTop_toBottomOf="@+id/edtNumOnTheBack" />
+
+    <Button
+        android:id="@+id/btnNewMembership"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="92dp"
+        android:text="@string/btnNewMembership"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnUpgradeBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:text="@string/btnBack"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNewMembership"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnNewMembership" />
+
+    <TextView
+        android:id="@+id/tvMembershipDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="53dp"
+        android:text="@string/tvMembershipDuration"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpgradePrice" />
+
+    <TextView
+        android:id="@+id/tvExpiresIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="640dp"
+        android:layout_marginEnd="168dp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvMembershipDuration"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

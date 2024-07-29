@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cancellation">
+
+    <TextView
+        android:id="@+id/tvCancellation"
+        android:layout_width="359dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="93dp"
+        android:gravity="center"
+        android:text="@string/tvCancellation"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/btnCancelBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/btnBack"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCancelBen" />
+
+    <TextView
+        android:id="@+id/tvCancelDesc"
+        android:layout_width="315dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="33dp"
+        android:text="@string/tvCancelDesc"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCancellation"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/btnConfirmCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/btnCancelSub"
+        android:textColorLink="#FF0000"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCancelBack" />
+
+    <TextView
+        android:id="@+id/tvCancelBen"
+        android:layout_width="332dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/tvCancelBen"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCancelDesc"
+        tools:ignore="TextSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseMembership">
+
+    <Button
+        android:id="@+id/btnChooseBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/btnBack"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinMemberships"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMemDuration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvChooseMembership" />
+
+    <TextView
+        android:id="@+id/tvChooseMembership"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/tvChoosemembership"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/spinMemberships"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMemFeatures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/tvFeatures"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMemDuration" />
+
+    <TextView
+        android:id="@+id/tvTournamentCreation"
+        android:layout_width="137dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/tvTournamentCreation"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEnableCourts"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvEnableCompetitive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/tvCompetitive"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMemFeatures" />
+
+    <TextView
+        android:id="@+id/tvEnableCourts"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/tvEnableCourt"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvEnableCompetitive"
+        app:layout_constraintStart_toStartOf="@+id/tvTournamentCreation"
+        app:layout_constraintTop_toBottomOf="@+id/tvEnableCompetitive"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvIsComp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvEnableCompetitive"
+        app:layout_constraintStart_toStartOf="@+id/tvMemDays" />
+
+    <TextView
+        android:id="@+id/tvMemDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/tvMemDuration"
+        android:textSize="28sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvMemDays"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSelectMembership"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/btnSelectMembership"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMemDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="256dp"
+        android:textSize="28sp"
+        app:layout_constraintStart_toEndOf="@+id/tvMemDuration"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvIsCourtBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/tvIsComp"
+        app:layout_constraintTop_toBottomOf="@+id/tvIsComp" />
+
+    <TextView
+        android:id="@+id/tvIsTournament"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/tvIsCourtBooking"
+        app:layout_constraintTop_toBottomOf="@+id/tvIsCourtBooking" />
+
+    <TextView
+        android:id="@+id/tvMembershipPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/tvPrice"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnChooseBack"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvIsTournament" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
